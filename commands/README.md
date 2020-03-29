@@ -26,10 +26,10 @@ They are implemented in [`src/commands`](../src/commands).
 | `dance.newLine.below` | Add new line below | Add a new line below, without entering insert mode. | `Alt+O` (`dance.mode == 'normal'`) |
 | `dance.newLine.above` | Add new line above | Add a new line above, without entering insert mode. | `Shift+Alt+O` (`dance.mode == 'normal'`) |
 | `dance.repeat.insert` | Repeat last insert-mode change | Repeat last insert-mode change. | `.` (`dance.mode == 'normal'`) |
-| `dance.left` | Move left | Move left. | `Left` (`dance.mode == 'normal'`), `H` (`dance.mode == 'normal'`) |
-| `dance.right` | Move right | Move right. | `Right` (`dance.mode == 'normal'`), `L` (`dance.mode == 'normal'`) |
-| `dance.up` | Move up | Move up. | `Up` (`dance.mode == 'normal'`), `K` (`dance.mode == 'normal'`) |
-| `dance.down` | Move down | Move down. | `Down` (`dance.mode == 'normal'`), `J` (`dance.mode == 'normal'`) |
+| `dance.left` | Move left | Move left. | `Left` (`dance.mode == 'normal'`), `J` (`dance.mode == 'normal'`) |
+| `dance.right` | Move right | Move right. | `Right` (`dance.mode == 'normal'`), `;` (`dance.mode == 'normal'`) |
+| `dance.up` | Move up | Move up. | `Up` (`dance.mode == 'normal'`), `L` (`dance.mode == 'normal'`) |
+| `dance.down` | Move down | Move down. | `Down` (`dance.mode == 'normal'`), `K` (`dance.mode == 'normal'`) |
 | `dance.up.page` | Scroll one page up | Scroll one page up. | `Ctrl+B` (`dance.mode == 'normal'`), `Ctrl+B` (`dance.mode == 'insert'`) |
 | `dance.down.page` | Scroll one page down | Scroll one page down. | `Ctrl+F` (`dance.mode == 'normal'`), `Ctrl+F` (`dance.mode == 'insert'`) |
 | `dance.up.halfPage` | Scroll half a page up | Scroll half a page up. | `Ctrl+U` (`dance.mode == 'normal'`), `Ctrl+U` (`dance.mode == 'insert'`) |
@@ -55,9 +55,9 @@ They are implemented in [`src/commands`](../src/commands).
 | `dance.select.firstLast` | Select first and last characters | Select first and last characters of each selection. | `Shift+Alt+S` (`dance.mode == 'normal'`) |
 | `dance.select.copy` | Copy selection to next line | Copy selection to next line. | `Shift+C` (`dance.mode == 'normal'`) |
 | `dance.select.copy.backwards` | Copy selection to previous line | Copy selection to previous line. | `Shift+Alt+C` (`dance.mode == 'normal'`) |
-| `dance.selections.reduce` | Reduce selections | Reduce selections to their cursor. | `;` (`dance.mode == 'normal'`) |
-| `dance.selections.flip` | Flip selections | Flip the direction of each selection. | `Alt+;` (`dance.mode == 'normal'`) |
-| `dance.selections.forward` | Forward selections | Ensure selections are in forward direction (the active cursor is after the anchor). | `Shift+Alt+;` (`dance.mode == 'normal'`) |
+| `dance.selections.reduce` | Reduce selections | Reduce selections to their cursor. | `H` (`dance.mode == 'normal'`) |
+| `dance.selections.flip` | Flip selections | Flip the direction of each selection. | `Alt+H` (`dance.mode == 'normal'`) |
+| `dance.selections.forward` | Forward selections | Ensure selections are in forward direction (the active cursor is after the anchor). | `Shift+Alt+H` (`dance.mode == 'normal'`) |
 | `dance.selections.backward` | Backward selections | Ensure selections are in backward direction (the active cursor is before the anchor). |  |
 | `dance.selections.clear` | Clear selections | Clear selections (except main) | `Space` (`dance.mode == 'normal'`) |
 | `dance.selections.clearMain` | Clear main selection | Clear main selection. | `Alt+Space` (`dance.mode == 'normal'`) |
@@ -130,10 +130,10 @@ They are implemented in [`src/commands`](../src/commands).
 | `dance.marks.restoreSelections` | Restore selections | Restore selections. | `Z` (`dance.mode == 'normal'`) |
 | `dance.marks.combineSelections.fromCurrent` | Combine current selections with ones from register | Combine current selections with ones from register. | `Shift+Alt+Z` (`dance.mode == 'normal'`) |
 | `dance.marks.combineSelections.fromRegister` | Combine register selections with current ones | Combine register selections with current ones. | `Alt+Z` (`dance.mode == 'normal'`) |
-| `dance.left.extend` | Move left (extend) | Move left (extend). | `Shift+Left` (`dance.mode == 'normal'`), `Shift+H` (`dance.mode == 'normal'`) |
-| `dance.right.extend` | Move right (extend) | Move right (extend). | `Shift+Right` (`dance.mode == 'normal'`), `Shift+L` (`dance.mode == 'normal'`) |
-| `dance.up.extend` | Move up (extend) | Move up (extend). | `Shift+Up` (`dance.mode == 'normal'`), `Shift+K` (`dance.mode == 'normal'`) |
-| `dance.down.extend` | Move down (extend) | Move down (extend). | `Shift+Down` (`dance.mode == 'normal'`), `Shift+J` (`dance.mode == 'normal'`) |
+| `dance.left.extend` | Move left (extend) | Move left (extend). | `Shift+Left` (`dance.mode == 'normal'`), `Shift+J` (`dance.mode == 'normal'`) |
+| `dance.right.extend` | Move right (extend) | Move right (extend). | `Shift+Right` (`dance.mode == 'normal'`), `Shift+;` (`dance.mode == 'normal'`) |
+| `dance.up.extend` | Move up (extend) | Move up (extend). | `Shift+Up` (`dance.mode == 'normal'`), `Shift+L` (`dance.mode == 'normal'`) |
+| `dance.down.extend` | Move down (extend) | Move down (extend). | `Shift+Down` (`dance.mode == 'normal'`), `Shift+K` (`dance.mode == 'normal'`) |
 | `dance.up.page.extend` | Scroll one page up (extend) | Scroll one page up (extend). | `Shift+Ctrl+B` (`dance.mode == 'normal'`), `Shift+Ctrl+B` (`dance.mode == 'insert'`) |
 | `dance.down.page.extend` | Scroll one page down (extend) | Scroll one page down (extend). | `Shift+Ctrl+F` (`dance.mode == 'normal'`), `Shift+Ctrl+F` (`dance.mode == 'insert'`) |
 | `dance.up.halfPage.extend` | Scroll half a page up (extend) | Scroll half a page up (extend). | `Shift+Ctrl+U` (`dance.mode == 'normal'`), `Shift+Ctrl+U` (`dance.mode == 'insert'`) |

@@ -185,7 +185,7 @@ export const repeatInsert: ICommand & { readonly id: 'dance.repeat.insert' } = {
 /**
  * Move left.
  *
- * Default keys: `Left` (`dance.mode == 'normal'`), `H` (`dance.mode == 'normal'`).
+ * Default keys: `Left` (`dance.mode == 'normal'`), `J` (`dance.mode == 'normal'`).
  */
 export const left: ICommand & { readonly id: 'dance.left' } = {
   id         : 'dance.left',
@@ -193,13 +193,13 @@ export const left: ICommand & { readonly id: 'dance.left' } = {
   description: 'Move left.',
   keybindings: [
     { key: 'left', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'h', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'j', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Move right.
  *
- * Default keys: `Right` (`dance.mode == 'normal'`), `L` (`dance.mode == 'normal'`).
+ * Default keys: `Right` (`dance.mode == 'normal'`), `;` (`dance.mode == 'normal'`).
  */
 export const right: ICommand & { readonly id: 'dance.right' } = {
   id         : 'dance.right',
@@ -207,13 +207,13 @@ export const right: ICommand & { readonly id: 'dance.right' } = {
   description: 'Move right.',
   keybindings: [
     { key: 'right', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'l', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: ';', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Move up.
  *
- * Default keys: `Up` (`dance.mode == 'normal'`), `K` (`dance.mode == 'normal'`).
+ * Default keys: `Up` (`dance.mode == 'normal'`), `L` (`dance.mode == 'normal'`).
  */
 export const up: ICommand & { readonly id: 'dance.up' } = {
   id         : 'dance.up',
@@ -221,13 +221,13 @@ export const up: ICommand & { readonly id: 'dance.up' } = {
   description: 'Move up.',
   keybindings: [
     { key: 'up', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'k', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'l', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Move down.
  *
- * Default keys: `Down` (`dance.mode == 'normal'`), `J` (`dance.mode == 'normal'`).
+ * Default keys: `Down` (`dance.mode == 'normal'`), `K` (`dance.mode == 'normal'`).
  */
 export const down: ICommand & { readonly id: 'dance.down' } = {
   id         : 'dance.down',
@@ -235,7 +235,7 @@ export const down: ICommand & { readonly id: 'dance.down' } = {
   description: 'Move down.',
   keybindings: [
     { key: 'down', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'j', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'k', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
@@ -572,40 +572,40 @@ export const selectCopyBackwards: ICommand & { readonly id: 'dance.select.copy.b
 /**
  * Reduce selections to their cursor.
  *
- * Default key: `;` (`dance.mode == 'normal'`).
+ * Default key: `H` (`dance.mode == 'normal'`).
  */
 export const selectionsReduce: ICommand & { readonly id: 'dance.selections.reduce' } = {
   id         : 'dance.selections.reduce',
   title      : 'Reduce selections',
   description: 'Reduce selections to their cursor.',
   keybindings: [
-    { key: ';', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'h', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Flip the direction of each selection.
  *
- * Default key: `Alt+;` (`dance.mode == 'normal'`).
+ * Default key: `Alt+H` (`dance.mode == 'normal'`).
  */
 export const selectionsFlip: ICommand & { readonly id: 'dance.selections.flip' } = {
   id         : 'dance.selections.flip',
   title      : 'Flip selections',
   description: 'Flip the direction of each selection.',
   keybindings: [
-    { key: 'Alt+;', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Alt+h', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Ensure selections are in forward direction (the active cursor is after the anchor).
  *
- * Default key: `Shift+Alt+;` (`dance.mode == 'normal'`).
+ * Default key: `Shift+Alt+H` (`dance.mode == 'normal'`).
  */
 export const selectionsForward: ICommand & { readonly id: 'dance.selections.forward' } = {
   id         : 'dance.selections.forward',
   title      : 'Forward selections',
   description: 'Ensure selections are in forward direction (the active cursor is after the anchor).',
   keybindings: [
-    { key: 'Shift+Alt+;', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+Alt+h', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
@@ -1526,7 +1526,7 @@ export const marksCombineSelectionsFromRegister: ICommand & { readonly id: 'danc
 /**
  * Move left (extend).
  *
- * Default keys: `Shift+Left` (`dance.mode == 'normal'`), `Shift+H` (`dance.mode == 'normal'`).
+ * Default keys: `Shift+Left` (`dance.mode == 'normal'`), `Shift+J` (`dance.mode == 'normal'`).
  */
 export const leftExtend: ICommand & { readonly id: 'dance.left.extend' } = {
   id         : 'dance.left.extend',
@@ -1534,13 +1534,13 @@ export const leftExtend: ICommand & { readonly id: 'dance.left.extend' } = {
   description: 'Move left (extend).',
   keybindings: [
     { key: 'Shift+left', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'Shift+h', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+j', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Move right (extend).
  *
- * Default keys: `Shift+Right` (`dance.mode == 'normal'`), `Shift+L` (`dance.mode == 'normal'`).
+ * Default keys: `Shift+Right` (`dance.mode == 'normal'`), `Shift+;` (`dance.mode == 'normal'`).
  */
 export const rightExtend: ICommand & { readonly id: 'dance.right.extend' } = {
   id         : 'dance.right.extend',
@@ -1548,13 +1548,13 @@ export const rightExtend: ICommand & { readonly id: 'dance.right.extend' } = {
   description: 'Move right (extend).',
   keybindings: [
     { key: 'Shift+right', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'Shift+l', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+;', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Move up (extend).
  *
- * Default keys: `Shift+Up` (`dance.mode == 'normal'`), `Shift+K` (`dance.mode == 'normal'`).
+ * Default keys: `Shift+Up` (`dance.mode == 'normal'`), `Shift+L` (`dance.mode == 'normal'`).
  */
 export const upExtend: ICommand & { readonly id: 'dance.up.extend' } = {
   id         : 'dance.up.extend',
@@ -1562,13 +1562,13 @@ export const upExtend: ICommand & { readonly id: 'dance.up.extend' } = {
   description: 'Move up (extend).',
   keybindings: [
     { key: 'Shift+up', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'Shift+k', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+l', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Move down (extend).
  *
- * Default keys: `Shift+Down` (`dance.mode == 'normal'`), `Shift+J` (`dance.mode == 'normal'`).
+ * Default keys: `Shift+Down` (`dance.mode == 'normal'`), `Shift+K` (`dance.mode == 'normal'`).
  */
 export const downExtend: ICommand & { readonly id: 'dance.down.extend' } = {
   id         : 'dance.down.extend',
@@ -1576,7 +1576,7 @@ export const downExtend: ICommand & { readonly id: 'dance.down.extend' } = {
   description: 'Move down (extend).',
   keybindings: [
     { key: 'Shift+down', when: 'editorTextFocus && dance.mode == \'normal\'' },
-    { key: 'Shift+j', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+k', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**

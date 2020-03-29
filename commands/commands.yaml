@@ -84,19 +84,19 @@ repeat.insert:
 
 left:
   title: Move left
-  keys: left (normal), h (normal)
+  keys: left (normal), j (normal)
   add: extend
 right:
   title: Move right
-  keys: right (normal), l (normal)
+  keys: right (normal), ; (normal)
   add: extend
 up:
   title: Move up
-  keys: up (normal), k (normal)
+  keys: up (normal), l (normal)
   add: extend
 down:
   title: Move down
-  keys: down (normal), j (normal)
+  keys: down (normal), k (normal)
   add: extend
 
 up.page:
@@ -249,17 +249,17 @@ select.copy.backwards:
 selections.reduce:
   title: Reduce selections
   descr: Reduce selections to their cursor.
-  keys: ; (normal)
+  keys: h (normal)
 
 selections.flip:
   title: Flip selections
   descr: Flip the direction of each selection.
-  keys: a-; (normal)
+  keys: a-h (normal)
 
 selections.forward:
   title: Forward selections
   descr: Ensure selections are in forward direction (the active cursor is after the anchor).
-  keys: s-a-; (normal)
+  keys: s-a-h (normal)
 
 selections.backward:
   title: Backward selections

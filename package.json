@@ -1178,7 +1178,7 @@
       },
       {
         "command": "dance.left",
-        "key": "h",
+        "key": "j",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1188,7 +1188,7 @@
       },
       {
         "command": "dance.right",
-        "key": "l",
+        "key": ";",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1198,7 +1198,7 @@
       },
       {
         "command": "dance.up",
-        "key": "k",
+        "key": "l",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1208,7 +1208,7 @@
       },
       {
         "command": "dance.down",
-        "key": "j",
+        "key": "k",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1368,17 +1368,17 @@
       },
       {
         "command": "dance.selections.reduce",
-        "key": ";",
+        "key": "h",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
         "command": "dance.selections.flip",
-        "key": "Alt+;",
+        "key": "Alt+h",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
         "command": "dance.selections.forward",
-        "key": "Shift+Alt+;",
+        "key": "Shift+Alt+h",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1733,7 +1733,7 @@
       },
       {
         "command": "dance.left.extend",
-        "key": "Shift+h",
+        "key": "Shift+j",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1743,7 +1743,7 @@
       },
       {
         "command": "dance.right.extend",
-        "key": "Shift+l",
+        "key": "Shift+;",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1753,7 +1753,7 @@
       },
       {
         "command": "dance.up.extend",
-        "key": "Shift+k",
+        "key": "Shift+l",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1763,7 +1763,7 @@
       },
       {
         "command": "dance.down.extend",
-        "key": "Shift+j",
+        "key": "Shift+k",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
