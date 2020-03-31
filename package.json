@@ -1,6 +1,6 @@
 {
-  "name": "dance",
-  "displayName": "Dance",
+  "name": "dance-alternate-homerow",
+  "displayName": "Dance (Alternate Homerow)",
   "description": "Make those cursors dance with Kakoune-inspired keybindings.",
   "version": "0.2.2",
   "license": "ISC",
@@ -1273,7 +1273,7 @@
       },
       {
         "command": "dance.select.toLineBegin",
-        "key": "Alt+h",
+        "key": "Alt+j",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1283,7 +1283,7 @@
       },
       {
         "command": "dance.select.toLineEnd",
-        "key": "Alt+l",
+        "key": "Alt+;",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1393,12 +1393,12 @@
       },
       {
         "command": "dance.selections.keepMatching",
-        "key": "Alt+k",
+        "key": "Alt+l",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
         "command": "dance.selections.clearMatching",
-        "key": "Shift+Alt+k",
+        "key": "Shift+Alt+l",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1478,7 +1478,7 @@
       },
       {
         "command": "dance.join",
-        "key": "Alt+j",
+        "key": "Alt+k",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1823,7 +1823,7 @@
       },
       {
         "command": "dance.select.toLineBegin.extend",
-        "key": "Shift+Alt+h",
+        "key": "Shift+Alt+j",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {
@@ -1833,7 +1833,7 @@
       },
       {
         "command": "dance.select.toLineEnd.extend",
-        "key": "Shift+Alt+l",
+        "key": "Shift+Alt+;",
         "when": "editorTextFocus && dance.mode == 'normal'"
       },
       {

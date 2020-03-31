@@ -38,8 +38,8 @@ They are implemented in [`src/commands`](../src/commands).
 | `dance.select.to.excluded` | Select until | Select until the next character pressed, excluding it. | `T` (`dance.mode == 'normal'`) |
 | `dance.select.buffer` | Select whole buffer | Select whole buffer. | `Shift+5` (`dance.mode == 'normal'`) |
 | `dance.select.line` | Select line | Select line on which the end of each selection lies (or next line when end lies on an end-of-line). | `X` (`dance.mode == 'normal'`) |
-| `dance.select.toLineBegin` | Select to line beginning | Select to line beginning. | `Alt+H` (`dance.mode == 'normal'`), `Home` (`dance.mode == 'normal'`) |
-| `dance.select.toLineEnd` | Select to line end | Select to line end. | `Alt+L` (`dance.mode == 'normal'`), `End` (`dance.mode == 'normal'`) |
+| `dance.select.toLineBegin` | Select to line beginning | Select to line beginning. | `Alt+J` (`dance.mode == 'normal'`), `Home` (`dance.mode == 'normal'`) |
+| `dance.select.toLineEnd` | Select to line end | Select to line end. | `Alt+;` (`dance.mode == 'normal'`), `End` (`dance.mode == 'normal'`) |
 | `dance.select.enclosing` | Select enclosing characters | Select enclosing characters. | `M` (`dance.mode == 'normal'`) |
 | `dance.expandLines` | Extend lines | Extend selections to contain full lines (including end-of-lines). | `Alt+X` (`dance.mode == 'normal'`) |
 | `dance.trimLines` | Trim lines | Trim selections to only contain full lines (not including last end-of-line). | `Shift+Alt+X` (`dance.mode == 'normal'`) |
@@ -61,8 +61,8 @@ They are implemented in [`src/commands`](../src/commands).
 | `dance.selections.backward` | Backward selections | Ensure selections are in backward direction (the active cursor is before the anchor). |  |
 | `dance.selections.clear` | Clear selections | Clear selections (except main) | `Space` (`dance.mode == 'normal'`) |
 | `dance.selections.clearMain` | Clear main selection | Clear main selection. | `Alt+Space` (`dance.mode == 'normal'`) |
-| `dance.selections.keepMatching` | Keep matching selections | Keep selections that match a RegExp. | `Alt+K` (`dance.mode == 'normal'`) |
-| `dance.selections.clearMatching` | Clear matching selections | Clear selections that match a RegExp. | `Shift+Alt+K` (`dance.mode == 'normal'`) |
+| `dance.selections.keepMatching` | Keep matching selections | Keep selections that match a RegExp. | `Alt+L` (`dance.mode == 'normal'`) |
+| `dance.selections.clearMatching` | Clear matching selections | Clear selections that match a RegExp. | `Shift+Alt+L` (`dance.mode == 'normal'`) |
 | `dance.selections.merge` | Merge contiguous selections | Merge contiguous selections together, including across lines. | `Shift+Alt+-` (`dance.mode == 'normal'`) |
 | `dance.selections.align` | Align selections | Align selections, aligning the cursor of each selection by inserting spaces before the first character of each selection. | `Shift+7` (`dance.mode == 'normal'`) |
 | `dance.selections.align.copy` | Copy indentation | Copy the indentation of the main selection (or the count one if a count is given) to all other ones. | `Shift+Alt+7` (`dance.mode == 'normal'`) |
@@ -78,7 +78,7 @@ They are implemented in [`src/commands`](../src/commands).
 | `dance.paste.replace` | Replace | Replace selections with yanked text. | `Shift+R` (`dance.mode == 'normal'`) |
 | `dance.paste.replace.every` | Replace with every | Replace selections with every yanked text. | `Shift+Alt+R` (`dance.mode == 'normal'`) |
 | `dance.replace.characters` | Replace character | Replace each selected character with the next entered one. | `R` (`dance.mode == 'normal'`) |
-| `dance.join` | Join lines | Join selected lines. | `Alt+J` (`dance.mode == 'normal'`) |
+| `dance.join` | Join lines | Join selected lines. | `Alt+K` (`dance.mode == 'normal'`) |
 | `dance.join.select` | Join lines and select spaces | Join selected lines and select spaces inserted in place of line breaks. | `Shift+Alt+J` (`dance.mode == 'normal'`) |
 | `dance.indent` | Indent | Indent selected lines. | `Shift+.` (`dance.mode == 'normal'`) |
 | `dance.indent.withEmpty` | Indent (including empty) | Indent selected lines (including empty lines). | `Shift+Alt+.` (`dance.mode == 'normal'`) |
@@ -141,8 +141,8 @@ They are implemented in [`src/commands`](../src/commands).
 | `dance.select.to.included.extend` | Extend to | Extend to the next character pressed, including it. | `Shift+F` (`dance.mode == 'normal'`) |
 | `dance.select.to.excluded.extend` | Extend until | Extend with until the next character pressed, excluding it. | `Shift+T` (`dance.mode == 'normal'`) |
 | `dance.select.line.extend` | Extend with line | Extend with line on which the end of each selection lies (or next line when end lies on an end-of-line). | `Shift+X` (`dance.mode == 'normal'`) |
-| `dance.select.toLineBegin.extend` | Extend to line beginning | Extend to line beginning. | `Shift+Alt+H` (`dance.mode == 'normal'`), `Shift+Home` (`dance.mode == 'normal'`) |
-| `dance.select.toLineEnd.extend` | Extend to line end | Extend to line end. | `Shift+Alt+L` (`dance.mode == 'normal'`), `Shift+End` (`dance.mode == 'normal'`) |
+| `dance.select.toLineBegin.extend` | Extend to line beginning | Extend to line beginning. | `Shift+Alt+J` (`dance.mode == 'normal'`), `Shift+Home` (`dance.mode == 'normal'`) |
+| `dance.select.toLineEnd.extend` | Extend to line end | Extend to line end. | `Shift+Alt+;` (`dance.mode == 'normal'`), `Shift+End` (`dance.mode == 'normal'`) |
 | `dance.select.enclosing.extend` | Extend with enclosing characters | Extend with enclosing characters. | `Shift+M` (`dance.mode == 'normal'`) |
 | `dance.select.word.extend` | Extend to next word start | Extend with the word and following whitespaces on the right of the end of each selection. | `Shift+W` (`dance.mode == 'normal'`) |
 | `dance.select.word.previous.extend` | Extend to previous word start | Extend with preceding whitespaces and the word on the left of the end of each selection. | `Shift+B` (`dance.mode == 'normal'`) |

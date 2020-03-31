@@ -349,28 +349,28 @@ export const selectLine: ICommand & { readonly id: 'dance.select.line' } = {
 /**
  * Select to line beginning.
  *
- * Default keys: `Alt+H` (`dance.mode == 'normal'`), `Home` (`dance.mode == 'normal'`).
+ * Default keys: `Alt+J` (`dance.mode == 'normal'`), `Home` (`dance.mode == 'normal'`).
  */
 export const selectToLineBegin: ICommand & { readonly id: 'dance.select.toLineBegin' } = {
   id         : 'dance.select.toLineBegin',
   title      : 'Select to line beginning',
   description: 'Select to line beginning.',
   keybindings: [
-    { key: 'Alt+h', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Alt+j', when: 'editorTextFocus && dance.mode == \'normal\'' },
     { key: 'home', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Select to line end.
  *
- * Default keys: `Alt+L` (`dance.mode == 'normal'`), `End` (`dance.mode == 'normal'`).
+ * Default keys: `Alt+;` (`dance.mode == 'normal'`), `End` (`dance.mode == 'normal'`).
  */
 export const selectToLineEnd: ICommand & { readonly id: 'dance.select.toLineEnd' } = {
   id         : 'dance.select.toLineEnd',
   title      : 'Select to line end',
   description: 'Select to line end.',
   keybindings: [
-    { key: 'Alt+l', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Alt+;', when: 'editorTextFocus && dance.mode == \'normal\'' },
     { key: 'end', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
@@ -646,27 +646,27 @@ export const selectionsClearMain: ICommand & { readonly id: 'dance.selections.cl
 /**
  * Keep selections that match a RegExp.
  *
- * Default key: `Alt+K` (`dance.mode == 'normal'`).
+ * Default key: `Alt+L` (`dance.mode == 'normal'`).
  */
 export const selectionsKeepMatching: ICommand & { readonly id: 'dance.selections.keepMatching' } = {
   id         : 'dance.selections.keepMatching',
   title      : 'Keep matching selections',
   description: 'Keep selections that match a RegExp.',
   keybindings: [
-    { key: 'Alt+k', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Alt+l', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Clear selections that match a RegExp.
  *
- * Default key: `Shift+Alt+K` (`dance.mode == 'normal'`).
+ * Default key: `Shift+Alt+L` (`dance.mode == 'normal'`).
  */
 export const selectionsClearMatching: ICommand & { readonly id: 'dance.selections.clearMatching' } = {
   id         : 'dance.selections.clearMatching',
   title      : 'Clear matching selections',
   description: 'Clear selections that match a RegExp.',
   keybindings: [
-    { key: 'Shift+Alt+k', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+Alt+l', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
@@ -867,14 +867,14 @@ export const replaceCharacters: ICommand & { readonly id: 'dance.replace.charact
 /**
  * Join selected lines.
  *
- * Default key: `Alt+J` (`dance.mode == 'normal'`).
+ * Default key: `Alt+K` (`dance.mode == 'normal'`).
  */
 export const join: ICommand & { readonly id: 'dance.join' } = {
   id         : 'dance.join',
   title      : 'Join lines',
   description: 'Join selected lines.',
   keybindings: [
-    { key: 'Alt+j', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Alt+k', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
@@ -1677,28 +1677,28 @@ export const selectLineExtend: ICommand & { readonly id: 'dance.select.line.exte
 /**
  * Extend to line beginning.
  *
- * Default keys: `Shift+Alt+H` (`dance.mode == 'normal'`), `Shift+Home` (`dance.mode == 'normal'`).
+ * Default keys: `Shift+Alt+J` (`dance.mode == 'normal'`), `Shift+Home` (`dance.mode == 'normal'`).
  */
 export const selectToLineBeginExtend: ICommand & { readonly id: 'dance.select.toLineBegin.extend' } = {
   id         : 'dance.select.toLineBegin.extend',
   title      : 'Extend to line beginning',
   description: 'Extend to line beginning.',
   keybindings: [
-    { key: 'Shift+Alt+h', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+Alt+j', when: 'editorTextFocus && dance.mode == \'normal\'' },
     { key: 'Shift+home', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }
 /**
  * Extend to line end.
  *
- * Default keys: `Shift+Alt+L` (`dance.mode == 'normal'`), `Shift+End` (`dance.mode == 'normal'`).
+ * Default keys: `Shift+Alt+;` (`dance.mode == 'normal'`), `Shift+End` (`dance.mode == 'normal'`).
  */
 export const selectToLineEndExtend: ICommand & { readonly id: 'dance.select.toLineEnd.extend' } = {
   id         : 'dance.select.toLineEnd.extend',
   title      : 'Extend to line end',
   description: 'Extend to line end.',
   keybindings: [
-    { key: 'Shift+Alt+l', when: 'editorTextFocus && dance.mode == \'normal\'' },
+    { key: 'Shift+Alt+;', when: 'editorTextFocus && dance.mode == \'normal\'' },
     { key: 'Shift+end', when: 'editorTextFocus && dance.mode == \'normal\'' },
   ],
 }

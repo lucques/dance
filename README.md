@@ -1,4 +1,4 @@
-Dance
+Dance (Alternate Homerow)
 =====
 
 [Kakoune]-inspired key bindings for [Visual Studio Code][VSC].
@@ -134,6 +134,18 @@ focusing much on unit tests for now.
 
 Contributions are welcome.
 
+
+## Configuring Keybindings
+
+Because changing the keybindings needs some re-compilation, here's a quick list of steps of how to do this.
+
+1. Change keybindings in `commands/commands.yaml`
+2. If not previously done, run `npm install vsce`
+3. If not previously done, run `npm install ts-node`
+4. Run `vsce package` (generates files within `commands` dir, generates `package.json`, generates a `.vsix` file in same dir)
+5. Install the package in VSCode by running `code --install-extension my-extension.vsix`
+
+See also [here](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#packaging-extensions).
 
 [commands]: ./commands
 [Vim]: https://www.vim.org

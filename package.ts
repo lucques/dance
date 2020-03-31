@@ -7,8 +7,8 @@ import { commands } from './commands'
 // ============================================================================
 
 const pkg = {
-  name: 'dance',
-  displayName: 'Dance',
+  name: 'dance-alternate-homerow',
+  displayName: 'Dance (Alternate Homerow)',
   description: 'Make those cursors dance with Kakoune-inspired keybindings.',
   version: '0.2.2',
   license: 'ISC',

@@ -147,12 +147,12 @@ select.line:
 
 select.toLineBegin:
   title: Select to line beginning
-  keys: a-h (normal), home (normal)
+  keys: a-j (normal), home (normal)
   add: extend
 
 select.toLineEnd:
   title: Select to line end
-  keys: a-l (normal), end (normal)
+  keys: a-; (normal), end (normal)
   add: extend
 
 select.enclosing:
@@ -277,12 +277,12 @@ selections.clearMain:
 selections.keepMatching:
   title: Keep matching selections
   descr: Keep selections that match a RegExp.
-  keys: a-k (normal)
+  keys: a-l (normal)
 
 selections.clearMatching:
   title: Clear matching selections
   descr: Clear selections that match a RegExp.
-  keys: s-a-k (normal)
+  keys: s-a-l (normal)
 
 selections.merge:
   title: Merge contiguous selections
@@ -366,7 +366,7 @@ replace.characters:
 join:
   title: Join lines
   descr: Join selected lines.
-  keys: a-j (normal)
+  keys: a-k (normal)
 
 join.select:
   title: Join lines and select spaces
